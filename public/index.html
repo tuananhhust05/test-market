@@ -31,9 +31,10 @@
 
   </head>
   <body>
-   
+    
     <div id="root"></div>
-    <style>
+  <!--CSS cả trang-->
+  <style>
       /*css menu-items ( menu ẩn)*/
 ul{
   list-style: none;
@@ -66,7 +67,7 @@ a{
 /*xong sang phần js*/
 /*tư duy; thanh bên trên quay 45 độ; thanh bên dưới quay 45 độ; thanh ở giữa sẽ biến mất*/
 .menu-bar-item-header.active span{
-background-color: transparent; /*set màu trong suốt*/
+background-color: white; 
 }
 
 .menu-bar-item-header.active span::before{ 
@@ -79,7 +80,7 @@ background-color: transparent; /*set màu trong suốt*/
 /*active phần đóng mở menu items*/
 .menu-bar-item-header.active{
   position:fixed;
-  top:30px;
+  top:50px;
   left:0;
   z-index:1; /*giúp menu bar nằm ở trên và không bị biến mất */
   transform:translateX(300px); /*dịch chuyển theo chiều âm trục x; dịch vào trong*/
@@ -146,7 +147,7 @@ transition:all 0.3s ease; /*điều chỉnh tốc độ*/
   width:300px;
   height:200px;
   position:absolute;
-  top:47%;
+  top:57%;
   left:50.75%;
 }
 /*slide hover*/
@@ -280,12 +281,11 @@ transition:all 0.3s ease; /*điều chỉnh tốc độ*/
   }
   </style>
  
-
 <!--header-->
 <nav class="navbar navbar-expand-lg navbar-primary bg-primary sticky-top" style="width:105%">
 <ul class="navbar-nav mr-auto"style="margin-left:95px">
     <li class="nav-item active">
-      <style>@import url(https://fonts.google.com/specimen/Macondo);</style>
+     
       <!--căn phải chọn thằng mà căn-->
        <a class="navbar-brand" href="/"style="font-size:30px;color:white;font-family:'Macondo';">@SMCS</a>
     </li>
@@ -408,7 +408,7 @@ transition:all 0.3s ease; /*điều chỉnh tốc độ*/
 <!--slide-->
 <div class="row">
  <!--Có thằng script ở dưới để điều chỉnh-->
-<div class="col-lg-3" id="element"style="display:block;box-shadow: 2px 2px 2px #999999;border-radius: 10px;width:23%;margin-left:7.5%;height:350px;margin-top:19px">
+<div class="col-lg-3" id="element"style="display:block;box-shadow: 2px 2px 2px #999999;border-radius: 10px;width:23%;margin-left:7.5%;height:450px;margin-top:19px">
     <li class="nav-item dropdown"id="openlistmonhoc" style="display:block;margin-top:10px">
       <a style="margin-top:2px;color:black;text-decoration:none" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          <i class="fa fa-language"></i>
@@ -496,7 +496,7 @@ transition:all 0.3s ease; /*điều chỉnh tốc độ*/
   
   
 </div>  
-<div id="show_slide"class="col-sm-12 col-lg-7" style="height:400px">
+<div id="show_slide"class="col-sm-12 col-lg-7" style="height:500px">
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -505,13 +505,13 @@ transition:all 0.3s ease; /*điều chỉnh tốc độ*/
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img style="height:350px;margin-top:20px;border-radius:10px" src="https://cdn.pixabay.com/photo/2018/01/17/07/06/laptop-3087585_960_720.jpg" class="d-block w-100">
+          <img style="height:450px;margin-top:20px;border-radius:10px" src="https://cdn.pixabay.com/photo/2018/01/17/07/06/laptop-3087585_960_720.jpg" class="d-block w-100">
         </div>
         <div class="carousel-item">
-          <img style="height:350px;margin-top:20px;border-radius:10px" src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg" class="d-block w-100">
+          <img style="height:450px;margin-top:20px;border-radius:10px" src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg" class="d-block w-100">
         </div>
         <div class="carousel-item">
-          <img style="height:350px;margin-top:20px;border-radius:10px"src="https://cdn.pixabay.com/photo/2015/05/31/10/51/technology-791029_960_720.jpg" class="d-block w-100">
+          <img style="height:450px;margin-top:20px;border-radius:10px"src="https://cdn.pixabay.com/photo/2015/05/31/10/51/technology-791029_960_720.jpg" class="d-block w-100">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -770,7 +770,7 @@ main();
 <!--gain_your_pupose-->
   <h2 class="gain_your_pupose_title">CHINH PHỤC MỤC TIÊU CỦA BẠN</h2>
   <div class="row gain_your_pupose_row">
-      <div class="col-sm-12 col-lg-5"id="textimage"style="margin-left:5%">
+      <div class="col-sm-12 col-lg-5"id="textimage">
           <img id="textimage"class="gain_your_pupose_title_img1"src="https://cms.unica.vn/upload/images/062122_combo-digital-marketing_thumb.jpg"/>
           <div class="gain_your_pupose_content1">
             <!--inline-block giúp cùng dòng-->
@@ -855,32 +855,32 @@ main();
   </div>
 <!--solution-->
   <h3 style="font-weight:700;text-align:center;margin-top:3%">CÁC GIẢI PHÁP TỪ SMCS</h3>
-  <div class="row"style="margin-top:3%;margin-left:10%">
-        <div style="margin-top:20px;margin-bottom:10px"class="col-sm-10 col-lg-6">
+  <div class="row"style="margin-top:3%;margin-left:10%; margin-right:5%">
+        <div style="margin-top:20px;margin-bottom:10px"class="col-sm-12 col-lg-6">
             <a href=""style="color:black;text-decoration:none">
             <div class="card" style="width: 100%;">
               <div style="box-shadow: 2px 2px 2px #999999;border-radius: 10px;">
-                <img style="width:100%"class="card-img-top" src="https://unica.vn/media/images_v2018/hb-edu.jpg" alt="Card image cap">
+                <img style="width:100%;height:350px"class="card-img-top" src="image_1.jpg" alt="Card image cap">
 
                 <div class="card-body">
                      <hr style="color:black;text-align: center;"  width="100%"  />
-                     <p class="card-text"style="text-align:center;text-shadow: 1px 1px 1px #000;">Blockchain</p>  
-                     <p class="card-text"style="text-align:center;text-shadow: 1px 1px 1px #C0C0C0;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>  
+                     <p class="card-text"style="text-align:center;text-shadow: 1px 1px 1px #000;">Blockchain Course</p>  
+                     <p class="card-text"style="text-align:center;text-shadow: 1px 1px 1px #C0C0C0;">Thiết kế học phần dựa trên chuẩn đầu ra</p>  
                 </div>
               </div>
              </div>
              </a>
         </div>
-         <div style="margin-top:20px;margin-bottom:10px"class="col-sm-10 col-lg-6">
+         <div style="margin-top:20px;margin-bottom:10px"class="col-sm-12 col-lg-6">
             <a href=""style="color:black;text-decoration:none">
             <div class="card" style="width: 100%;">
               <div style="box-shadow: 2px 2px 2px #999999;border-radius: 10px;">
-                <img style="width:100%"class="card-img-top" src="https://unica.vn/media/images_v2018/hb-edu.jpg" alt="Card image cap">
+                <img style="width:100%;height:350px"class="card-img-top" src="image_2.jpg" alt="Card image cap">
 
                 <div class="card-body">
                      <hr style="color:black;text-align: center;"  width="100%"  />
-                     <p class="card-text"style="text-align:center;text-shadow: 1px 1px 1px #000;">Blockchain</p>  
-                     <p class="card-text"style="text-align:center;text-shadow: 1px 1px 1px #C0C0C0;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>  
+                     <p class="card-text"style="text-align:center;text-shadow: 1px 1px 1px #000;">Blockchain Course</p>  
+                     <p class="card-text"style="text-align:center;text-shadow: 1px 1px 1px #C0C0C0;">Chuyển đổi số hoàn toàn trong phương pháp dạy học trực tuyến</p>  
                 </div>
               </div>
              </div>
