@@ -136,9 +136,17 @@ transition:all 0.3s ease; /*điều chỉnh tốc độ*/
   line-height: 40px;
   font-size:15px;
   text-decoration: none;
+  border-radius:5px;
 }
-
-
+.menu-item{
+  border-radius: 5px;
+  padding-left:5px;
+}
+.menu-item:hover{
+  background: #E0FFFF;
+  transform:rotate(360deg);
+  transition:all 0.3s ease;
+}
 
 
 
@@ -255,6 +263,9 @@ transition:all 0.3s ease; /*điều chỉnh tốc độ*/
       #show_slide{
           margin-left:0%;
           width:100%;
+      }
+      .list_service_row{
+         display:none;
       }
   }
   @media (max-width: 601px) {
@@ -816,7 +827,7 @@ main();
     </div>
     <div class="col-sm-4 col-lg-2 list_service_content_1_2"id="textimage2">
       <i class="fa fa-desktop"></i>
-      <p >Tin học văn phòng</p>
+      <p >Tin học</p>
     </div>
     <div class="col-sm-4 col-lg-2 list_service_content_1_2"id="textimage2">
       <i class="fa fa-camera"></i>
